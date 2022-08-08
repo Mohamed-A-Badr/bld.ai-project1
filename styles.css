@@ -58,6 +58,11 @@ input {
 .material-symbols-outlined.cart {
   color: #1c1d1f;
 }
+.material-symbols-outlined.cart:hover {
+  color: #5900cf;
+  cursor: pointer;
+}
+
 /*Login-Signin-lang buttons*/
 .login-btn,
 .signin-btn {
