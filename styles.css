@@ -1,0 +1,102 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*Navigation Bar*/
+nav {
+  border: 1px black solid;
+  padding: 10px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.05);
+}
+img {
+  width: 5rem;
+}
+
+/*Links*/
+a {
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+}
+a:hover {
+  color: #5900cf;
+}
+
+/*Search Bar*/
+.material-symbols-outlined.search {
+  color: #8b8c8e;
+}
+
+form {
+  background-color: #f7f9fa;
+  border: 1px #48494b solid;
+  padding: 10px;
+  display: flex;
+  width: auto;
+  justify-content: space-between;
+  border-radius: 50px;
+  gap: 10px;
+  align-items: flex-start;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+input {
+  width: 100%;
+  background-color: #f7f9fa;
+  outline: none;
+  border: none;
+}
+
+.material-symbols-outlined.cart {
+  color: #1c1d1f;
+}
+/*Login-Signin-lang buttons*/
+.login-btn,
+.signin-btn {
+  padding: 10px 20px;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border: 1px black solid;
+  margin: -5px;
+}
+
+.login-btn {
+  background-color: white;
+}
+.signin-btn {
+  background-color: black;
+  color: white;
+}
+span {
+  display: inline-block;
+  width: auto;
+}
+.lang-btn {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  padding: 6px;
+  margin: -5px;
+  background-color: white;
+  border: 1px black solid;
+}
+.login-btn:hover {
+  background-color: #f7f9fa;
+  cursor: pointer;
+}
+.signin-btn:hover {
+  cursor: pointer;
+}
+.lang-btn:hover {
+  background-color: #f7f9fa;
+  cursor: pointer;
+}
