@@ -173,8 +173,8 @@ p {
   margin: 0;
 }
 .clock img {
-  width: 15%;
-  position: absolute;
+  width: 20%;
+  position: relative;
   right: 20%;
 }
 
