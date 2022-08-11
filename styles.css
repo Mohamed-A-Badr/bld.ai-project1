@@ -1,0 +1,392 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*
+
+Navigation Bar
+
+*/
+nav {
+  border: 1px black solid;
+  padding: 10px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0px 0px 0px 4px rgba(12, 12, 12, 0.05);
+  z-index: 5;
+}
+img {
+  width: 5rem;
+}
+
+/*
+
+Links
+
+*/
+a {
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+}
+a:hover {
+  color: #5900cf;
+}
+
+/*
+
+Search Bar
+
+*/
+.material-symbols-outlined.search {
+  color: #8b8c8e;
+}
+
+form {
+  background-color: #f7f9fa;
+  border: 1px #48494b solid;
+  padding: 10px;
+  display: flex;
+  width: auto;
+  justify-content: space-between;
+  border-radius: 50px;
+  gap: 10px;
+  align-items: flex-start;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+input {
+  width: 100%;
+  background-color: #f7f9fa;
+  outline: none;
+  border: none;
+}
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.material-symbols-outlined.cart {
+  color: #1c1d1f;
+}
+.material-symbols-outlined.cart:hover {
+  color: #5900cf;
+  cursor: pointer;
+}
+
+/*
+
+Login-Signin-lang buttons
+
+*/
+.login-btn,
+.signin-btn {
+  padding: 10px 20px;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border: 1px black solid;
+  margin: -5px;
+}
+
+.login-btn {
+  background-color: white;
+}
+.signin-btn {
+  background-color: black;
+  color: white;
+}
+span {
+  display: inline-block;
+  width: auto;
+}
+.lang-btn {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  padding: 6px;
+  margin: -5px;
+  background-color: white;
+  border: 1px black solid;
+}
+.login-btn:hover {
+  background-color: #f7f9fa;
+  cursor: pointer;
+}
+.signin-btn:hover {
+  cursor: pointer;
+}
+.lang-btn:hover {
+  background-color: #f7f9fa;
+  cursor: pointer;
+}
+
+.material-symbols-outlined.list {
+  display: none;
+}
+
+/*
+
+Header
+
+*/
+header {
+  margin: 0px 10%;
+}
+
+/*
+
+Card and Clock
+
+*/
+.clock {
+  background-color: #f8f9fb;
+  padding: 50px;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+.clock div {
+  background-color: white;
+  padding: 2%;
+  width: 30%;
+  height: auto;
+  box-shadow: 1px 2px 3px 4px rgba(12, 12, 12, 0.1);
+}
+h1 {
+  margin: 2px 0;
+  font-size: 2rem;
+}
+p {
+  font-family: sans-serif;
+  margin: 0;
+}
+.clock img {
+  width: 20%;
+  position: relative;
+  right: 20%;
+}
+
+/*
+
+list of tabs;
+
+*/
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1.5%;
+  padding: 0;
+}
+
+li {
+  font-family: sans-serif;
+  color: #8b8c8e;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.python {
+  color: black;
+}
+
+li:hover {
+  cursor: pointer;
+  color: black;
+}
+/*
+
+
+Cards container
+
+
+*/
+h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-family: sans-serif;
+}
+
+.header-container {
+  max-width: 70%;
+  min-width: 20%;
+}
+
+.card-container .describtion {
+  margin: 0;
+  font-size: 1rem;
+}
+.card-container {
+  border: 1px black solid;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
+.explore-btn {
+  background-color: white;
+  border: 1px black solid;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.explore-btn:hover {
+  background-color: #f7f9fa;
+  cursor: pointer;
+}
+
+/*
+
+Cards
+
+*/
+
+.courses-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 15rem;
+}
+.card-image img {
+  width: 100%;
+}
+.card-title {
+  font-family: sans-serif;
+}
+.card-title h3 {
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.card-title p {
+  font-size: 0.75rem;
+  color: #8b8c8e;
+  margin-bottom: 5px;
+}
+
+.rating {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 70%;
+}
+.rating > span {
+  color: #b4690f;
+  font-size: small;
+  padding: 0;
+}
+.material-symbols-outlined.star {
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+  color: #e59819;
+}
+span.no-of-ratings {
+  color: #8b8c8e;
+}
+
+/*
+
+  price
+
+*/
+
+.courses-price {
+  display: flex;
+  align-items: flex-start;
+}
+.new-price {
+  display: inline;
+  font-weight: bold;
+}
+.discount {
+  display: inline;
+  font-size: 1rem;
+  text-decoration: line-through;
+  color: #8b8c8e;
+}
+
+.card:hover {
+  cursor: pointer;
+  color: #8b8c8e;
+}
+
+/*
+
+  spacing
+
+*/
+
+.spacing {
+  width: 100%;
+  height: 100%;
+}
+
+/*
+
+  Small Screen
+
+*/
+@media screen and (max-width: 800px) {
+  /*Nav Bar*/
+  nav,
+  .material-symbols-outlined.list {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  form,
+  button,
+  .lang-btn,
+  .material-symbols-outlined.cart,
+  .removable-links {
+    display: none;
+  }
+
+  /*Header*/
+  .clock img {
+    position: static;
+    width: 30%;
+  }
+  .clock {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 3% 0 0 0;
+  }
+  .clock div {
+    box-shadow: none;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  /*Cards*/
+  .card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+  }
+  .card .card-image {
+    width: 75%;
+  }
+}
