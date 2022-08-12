@@ -1,24 +1,26 @@
 body {
+  width: 100%;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 /*
 
 Navigation Bar
 
 */
-nav {
+.nav-bar {
   border: 1px black solid;
   padding: 10px 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  box-shadow: 0px 0px 0px 4px rgba(12, 12, 12, 0.05);
-  z-index: 5;
+  box-shadow: 0px 0px 10px 5px rgba(12, 12, 12, 0.1);
 }
-img {
+
+.logo {
   width: 5rem;
 }
 
@@ -42,17 +44,17 @@ a:hover {
 Search Bar
 
 */
+
 .material-symbols-outlined.search {
   color: #8b8c8e;
 }
 
-form {
+#search-space {
   background-color: #f7f9fa;
   border: 1px #48494b solid;
   padding: 10px;
   display: flex;
   width: auto;
-  justify-content: space-between;
   border-radius: 50px;
   gap: 10px;
   align-items: flex-start;
@@ -61,7 +63,7 @@ form {
   flex-grow: 1;
 }
 
-input {
+.search-input {
   width: 100%;
   background-color: #f7f9fa;
   outline: none;
@@ -90,11 +92,11 @@ Login-Signin-lang buttons
 .login-btn,
 .signin-btn {
   padding: 10px 20px;
-  font-family: sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.8em;
   font-weight: bold;
   border: 1px black solid;
   margin: -5px;
+  white-space: nowrap;
 }
 
 .login-btn {
@@ -104,10 +106,12 @@ Login-Signin-lang buttons
   background-color: black;
   color: white;
 }
+/*
 span {
   display: inline-block;
   width: auto;
 }
+*/
 .lang-btn {
   display: flex;
   align-items: center;
@@ -132,24 +136,22 @@ span {
 .material-symbols-outlined.list {
   display: none;
 }
-
-/*
-
-Header
-
-*/
-header {
-  margin: 0px 10%;
-}
-
 /*
 
 Card and Clock
 
 */
-.clock {
+
+header {
+  margin: 0px auto;
+  width: 80%;
+  max-width: 100rem;
+}
+
+.clock-note {
   background-color: #f8f9fb;
   padding: 50px;
+  margin-bottom: 10px;
   width: auto;
   height: auto;
   display: flex;
@@ -157,23 +159,27 @@ Card and Clock
   flex-wrap: wrap;
   position: relative;
 }
-.clock div {
+.clock-note .note {
   background-color: white;
   padding: 2%;
   width: 30%;
   height: auto;
-  box-shadow: 1px 2px 3px 4px rgba(12, 12, 12, 0.1);
+  box-shadow: 1px 2px 10px 4px rgba(12, 12, 12, 0.1);
 }
-h1 {
-  margin: 2px 0;
+.note-headline,
+.coures-headline,
+.intro-headline {
+  margin: 0 0 15px 0;
   font-size: 2rem;
 }
-p {
-  font-family: sans-serif;
-  margin: 0;
+.note-description,
+.course-description,
+.intro-description {
+  margin: 0 0 10px 0;
 }
-.clock img {
-  width: 20%;
+.clock-note .clock {
+  width: 12em;
+  height: 12em;
   position: relative;
   right: 20%;
 }
@@ -189,12 +195,11 @@ ul {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
-  gap: 1.5%;
+  gap: 1rem;
   padding: 0;
 }
 
 li {
-  font-family: sans-serif;
   color: #8b8c8e;
   font-weight: bold;
   font-size: 1rem;
@@ -215,21 +220,12 @@ Cards container
 
 
 */
-h2 {
-  margin-top: 0;
-  margin-bottom: 15px;
-  font-family: sans-serif;
-}
 
 .header-container {
   max-width: 70%;
   min-width: 20%;
 }
 
-.card-container .describtion {
-  margin: 0;
-  font-size: 1rem;
-}
 .card-container {
   border: 1px black solid;
   padding: 10px 20px;
@@ -267,9 +263,6 @@ Cards
 }
 .card-image img {
   width: 100%;
-}
-.card-title {
-  font-family: sans-serif;
 }
 .card-title h3 {
   font-size: 1rem;
@@ -348,12 +341,12 @@ span.no-of-ratings {
 */
 @media screen and (max-width: 800px) {
   /*Nav Bar*/
-  nav,
+  .nav-bar,
   .material-symbols-outlined.list {
     display: flex;
     flex-direction: row-reverse;
   }
-  form,
+  #search-space,
   button,
   .lang-btn,
   .material-symbols-outlined.cart,
@@ -362,17 +355,16 @@ span.no-of-ratings {
   }
 
   /*Header*/
-  .clock img {
+  .clock-note .clock {
     position: static;
-    width: 30%;
   }
-  .clock {
+  .clock-note {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     padding: 3% 0 0 0;
   }
-  .clock div {
+  .clock-note .note {
     box-shadow: none;
     width: 100%;
   }
@@ -384,9 +376,13 @@ span.no-of-ratings {
     width: 100%;
     display: flex;
     align-items: center;
-    gap: 5%;
+    flex-wrap: nowrap;
+    gap: 2%;
   }
   .card .card-image {
     width: 75%;
+  }
+  .rating {
+    flex-wrap: nowrap;
   }
 }
