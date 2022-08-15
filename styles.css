@@ -261,6 +261,9 @@ Cards
 .card {
   width: 15rem;
 }
+.card-image {
+  width: 15rem;
+}
 .card-image img {
   width: 100%;
 }
@@ -379,8 +382,8 @@ span.no-of-ratings {
     flex-wrap: nowrap;
     gap: 2%;
   }
-  .card .card-image {
-    width: 75%;
+  .card-image {
+    min-width: 10rem;
   }
   .rating {
     flex-wrap: nowrap;
