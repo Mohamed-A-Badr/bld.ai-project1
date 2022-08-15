@@ -385,6 +385,7 @@ Cards
     flex-wrap: nowrap;
     gap: 2%;
   }
+
   .card-image {
     min-width: 10rem;
   }
