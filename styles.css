@@ -281,23 +281,26 @@ Cards
 .rating {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
   flex-wrap: wrap;
   width: 70%;
 }
-.rating > span {
+.rating .total-rate {
   color: #b4690f;
   font-size: small;
   padding: 0;
 }
-.material-symbols-outlined.star {
-  font-size: 1rem;
-  padding: 0;
-  margin: 0;
+.fa-star,
+.fa-star-half-full {
+  font-size: 12px;
   color: #e59819;
 }
-span.no-of-ratings {
+.total-rate {
+  margin-right: 5px;
+}
+.no-of-ratings {
   color: #8b8c8e;
+  margin-left: 5px;
+  font-size: small;
 }
 
 /*
@@ -387,5 +390,8 @@ span.no-of-ratings {
   }
   .rating {
     flex-wrap: nowrap;
+  }
+  .card-container {
+    min-width: 400px;
   }
 }
