@@ -1,7 +1,7 @@
 import coursesCard from "./Courses_card.js";
 
 const fetchData = async () => {
-  const response = await fetch("http://localhost:3000/Courses");
+  const response = await fetch(`http://localhost:3000/Courses`);
   return await response.json();
 };
 
