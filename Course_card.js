@@ -1,5 +1,5 @@
 const container = document.querySelector(".courses-container");
-export const generateCards = ({
+export const coursesCard = ({
   img,
   title,
   author,
@@ -30,20 +30,20 @@ export const generateCards = ({
   cardContentContainer.classList.add("card-title");
 
   //create h3 contain course name
-  const title = document.createElement("h3");
-  const titleText = document.createTextNode(title);
-  title.appendChild(titleText);
+  const courseTitle = document.createElement("h3");
+  const courseTitleText = document.createTextNode(title);
+  courseTitle.appendChild(courseTitleText);
 
   //insert it inside the card container
-  cardContentContainer.appendChild(title);
+  cardContentContainer.appendChild(courseTitle);
 
   //create p contain author name
-  const author = document.createElement("p");
-  const authorName = document.createTextNode(author);
-  author.appendChild(authorName);
+  const authorName = document.createElement("p");
+  const authorNameText = document.createTextNode(author);
+  authorName.appendChild(authorNameText);
 
   //insert it inside the card container
-  cardContentContainer.appendChild(author);
+  cardContentContainer.appendChild(authorName);
 
   //creating a rating container for stars and total rate
   const rateContainer = document.createElement("div");
@@ -61,15 +61,17 @@ export const generateCards = ({
   rateContainer.appendChild(totRate);
 
   //creating full Stars and push it inside the rating container
+  const fullStarClasses = ["fa", "fa-star", "checked"];
   for (let i = 0; i < 4; i++) {
-    let fullStar = document.createElement("span");
-    fullStar.classList.add("fa fa-star checked");
+    const fullStar = document.createElement("span");
+    fullStar.classList.add(fullStarClasses);
 
     rateContainer.appendChild(fullStar);
   }
   //create and push the half star inside the rating container
-  const halfStar = documnet.createElement("span");
-  halfStar.classList.add("fa fa-star-half-full");
+  const halfStarClass = ["fa", "fa-star-half-full"];
+  const halfStar = document.createElement("span");
+  halfStar.classList.add(halfStarClass);
 
   rateContainer.appendChild(halfStar);
 
@@ -104,7 +106,7 @@ export const generateCards = ({
   newPrice.appendChild(newPriceText);
 
   //push the pahargraph inside the price container
-  priceContainer.appendChile(newPrice);
+  priceContainer.appendChild(newPrice);
 
   /*
   create pahargraph element and insert inside it the 
