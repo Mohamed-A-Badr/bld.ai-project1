@@ -128,7 +128,6 @@ export const generateCard = ({
 };
 
 // Search process
-
 const userInput = document.querySelector(".search-input");
 const allCourses = document.querySelector(".courses-container");
 
