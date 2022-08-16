@@ -14,4 +14,5 @@ if (udemyCourses) {
     generateCard(item);
   });
 }
+
 search();
