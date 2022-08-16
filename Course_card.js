@@ -51,7 +51,7 @@ export const generateCard = ({
 
   //create a span for the total rate
   const totRate = document.createElement("span");
-  totRate.classList.add("total_rate");
+  totRate.classList.add("total-rate");
 
   //insert inside the span the value
   const totRateText = document.createTextNode(total_rate);
@@ -64,14 +64,14 @@ export const generateCard = ({
   const fullStarClasses = ["fa", "fa-star", "checked"];
   for (let i = 0; i < 4; i++) {
     const fullStar = document.createElement("span");
-    fullStar.classList.add(fullStarClasses);
+    fullStar.classList.add(...fullStarClasses);
 
     rateContainer.appendChild(fullStar);
   }
   //create and push the half star inside the rating container
   const halfStarClass = ["fa", "fa-star-half-full"];
   const halfStar = document.createElement("span");
-  halfStar.classList.add(halfStarClass);
+  halfStar.classList.add(...halfStarClass);
 
   rateContainer.appendChild(halfStar);
 
