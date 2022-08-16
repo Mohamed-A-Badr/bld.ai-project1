@@ -1,5 +1,5 @@
 const container = document.querySelector(".courses-container");
-export const coursesCard = ({
+export const generateCard = ({
   img,
   title,
   author,
@@ -125,4 +125,26 @@ export const coursesCard = ({
 
   //push the card container inside the courses container
   container.appendChild(cardContainer);
+};
+
+// Search process
+
+const userInput = document.querySelector(".search-input");
+const allCourses = document.querySelector(".courses-container");
+
+export const search = () => {
+  userInput.addEventListener("keyup", () => {
+    const valueSearch = userInput.value.toLowerCase();
+    const allCoursesArray = Array.from(allCourses.querySelectorAll(".card"));
+    allCoursesArray.forEach((item) => {
+      const text = item.querySelector("h3").innerText;
+      const TextLower = text.toLocaleLowerCase();
+      const match = TextLower.includes(valueSearch);
+      if (match) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  });
 };
