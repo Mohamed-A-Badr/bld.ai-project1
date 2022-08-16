@@ -1,6 +1,6 @@
-#Installing json server
+# Installing json server
 npm install -g json-server
-#Running server
+# Running server
 json-server --watch Courses_content.json
-or
+## or
 npx json-server --watch ./Courses_content.json
