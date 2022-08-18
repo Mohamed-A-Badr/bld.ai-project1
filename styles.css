@@ -188,8 +188,27 @@ header {
 
 list of tabs;
 
-*/
 
+.btns > button {
+  background-color: white;
+  border: none;
+  padding: 0;
+  margin-right: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #8b8c8e;
+}
+
+#btn_python {
+  color: black;
+}
+
+.btns button:hover {
+  color: black;
+  cursor: pointer;
+}
+
+*/
 ul {
   list-style: none;
   display: flex;
@@ -217,6 +236,7 @@ li:hover {
 li:active {
   color: black;
 }
+
 /*
 
 
@@ -342,17 +362,6 @@ Cards
   height: 50px;
   background-color: black;
   border-radius: 50%;
-}
-
-/*
-
-  spacing
-
-*/
-
-.spacing {
-  width: 200px;
-  height: 200px;
 }
 
 /*
