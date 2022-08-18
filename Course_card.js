@@ -31,6 +31,7 @@ export const generateCard = ({
 
   //create h3 contain course name
   const courseTitle = document.createElement("h3");
+  courseTitle.classList.add("fw-bold");
   const courseTitleText = document.createTextNode(title);
   courseTitle.appendChild(courseTitleText);
 
@@ -63,14 +64,14 @@ export const generateCard = ({
   //creating full Stars and push it inside the rating container
   const fullStarClasses = ["fa", "fa-star", "checked"];
   for (let i = 0; i < 4; i++) {
-    const fullStar = document.createElement("span");
+    const fullStar = document.createElement("i");
     fullStar.classList.add(...fullStarClasses);
 
     rateContainer.appendChild(fullStar);
   }
   //create and push the half star inside the rating container
   const halfStarClass = ["fa", "fa-star-half-full"];
-  const halfStar = document.createElement("span");
+  const halfStar = document.createElement("i");
   halfStar.classList.add(...halfStarClass);
 
   rateContainer.appendChild(halfStar);

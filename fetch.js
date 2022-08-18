@@ -1,8 +1,10 @@
 import { generateCard } from "./Course_card.js";
 import { search } from "./Course_card.js";
 
+const courseType = document.querySelector("li");
+
 const fetchData = async () => {
-  const response = await fetch(`http://localhost:3000/Courses`);
+  const response = await fetch(`${courseType.getAttribute("href")}`);
   return await response.json();
 };
 

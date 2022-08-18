@@ -1,5 +1,5 @@
 {
-  "Courses": [
+  "Python": [
     {
       "img": "./assets/Learn-Python-The-Complete-Python-Programming-Course.webp",
       "title": "Learn Python: The Complete Python Programming Course",
@@ -53,6 +53,118 @@
       "no_of_ratings": "(101,639)",
       "new_Price": "E£319.99",
       "discount": "E£519.99"
+    }
+  ],
+  "Excel": [
+    {
+      "img": "https://media.onlinecoursebay.com/2019/03/29150745/31535_e351_7-750x405.jpg",
+      "title": "Microsoft Excel 2013 Course Beginners/ Intermediate Training",
+      "author": "Infinite Skills",
+      "total_rate": "4.5",
+      "no_of_ratings": "(1,623)",
+      "new_Price": "E£519.99",
+      "discount": "E£0"
+    },
+    {
+      "img": "https://media.onlinecoursebay.com/2019/03/29150550/39292_b3f3_9-750x405.jpg",
+      "title": "Microsoft Excel 2013 Advanced. Online Excel Training Course",
+      "author": "Infinite Skills",
+      "total_rate": "4.5",
+      "no_of_ratings": "(3,504)",
+      "new_Price": "E£519.99",
+      "discount": "E£0"
+    },
+    {
+      "img": "./assets/Excelcourse.png",
+      "title": "Microsoft Excel - From Beginner to Expert in 6 Hours",
+      "author": "Todd McLeod",
+      "total_rate": "4.5",
+      "no_of_ratings": "(24,595)",
+      "new_Price": "E£269.99",
+      "discount": "E£0"
+    },
+    {
+      "img": "https://www.virtual-college.co.uk/-/media/vcwebsite2/images/ready-to-go-training/personal-and-professional-development/ms-office-2013/ms-excel-2013/ms-excel-2013-advanced-01.png?mw=1000&hash=0CECFD5917B91F5C6B559A9B4670F8AC6EACCEF7",
+      "title": "Learn Microsoft Excel 2013 - Advanced",
+      "author": "Simon Sez IT",
+      "total_rate": "4.6",
+      "no_of_ratings": "(372)",
+      "new_Price": "E£679.99",
+      "discount": "E£0"
+    },
+    {
+      "img": "https://du5jhqks4kn0y.cloudfront.net/5c9b64e423d796006a35d698/bcf83db9-e1ce-7f1e-87eb-d53c727ba2f6.jpg",
+      "title": "7 Steps To Excel Success - Excel Skills And Power Tips",
+      "author": "Billy Wigley, Stephanie Jhoy Tumulak",
+      "total_rate": "4.6",
+      "no_of_ratings": "(1,234)",
+      "new_Price": "E£769.99",
+      "discount": "E£0"
+    },
+    {
+      "img": "https://www.courselelo.com/photos/poster/d95d4882c6a8965eb8585dcaafab333e.jpg",
+      "title": "The Ultimate Microsoft Excel 2013 Training Bundle - 19 Hours",
+      "author": "Simon Sez IT",
+      "total_rate": "4.6",
+      "no_of_ratings": "(333)",
+      "new_Price": "E£1,299.99",
+      "discount": "E£0"
+    }
+  ],
+  "JavaScript": [
+    {
+      "img": "https://www.codecademy.com/resources/blog/content/images/2021/08/10-JavaScript-code-challenges-for-beginners.png",
+      "title": "Javascript for Beginners",
+      "author": "Tech Learning Network",
+      "total_rate": "4.5",
+      "no_of_ratings": "(788)",
+      "new_Price": "E£229.99",
+      "discount": "E£0"
+    },
+    {
+      "img": "https://courses99.com/wp-content/uploads/2022/02/result-303-550x309.png",
+      "title": "1 Hour JavaScript",
+      "author": "John Bura",
+      "total_rate": "4.4",
+      "no_of_ratings": "(1,898)",
+      "new_Price": "E£1,399.99",
+      "discount": "E£0"
+    },
+    {
+      "img": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/mHZYiRgJSNydNMIZT3eb",
+      "title": "Javascript for Beginners Learn by Doing Practical Exercises",
+      "author": "Todd McLeod",
+      "total_rate": "4.5",
+      "no_of_ratings": "(24,595)",
+      "new_Price": "E£269.99",
+      "discount": "E£0"
+    },
+    {
+      "img": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/mHZYiRgJSNydNMIZT3eb",
+      "title": "Javascript for Beginners Learn by Doing Practical Exercises",
+      "author": "Edwin Diaz, Coding Faculty Solutions",
+      "total_rate": "4.3",
+      "no_of_ratings": "(14,143)",
+      "new_Price": "E£679.99",
+      "discount": "E£0"
+    },
+    {
+      "img": "https://media.onlinecoursebay.com/2019/03/14002243/426196_3cb8_4-750x405.jpg",
+      "title": "JavaScript from Beginner to Expert",
+      "author": "Arkadiusz Włodarczyk",
+      "total_rate": "4.3",
+      "no_of_ratings": "(1,155)",
+      "new_Price": "E£829.99",
+      "discount": "E£0"
+    },
+    {
+      "img": "https://couponos.me/wp-content/uploads/The-Complete-JavaScript-Course.jpg",
+      "title": "The Complete JavaScript Course 2022: From Zero to Expert!",
+      "author": "Jonas Schmedtmann",
+      "total_rate": "4.8",
+      "no_of_ratings": "(147,313)",
+      "new_Price": "E£1,699.99",
+      "discount": "E£0"
     }
   ]
 }

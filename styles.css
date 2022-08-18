@@ -3,7 +3,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: sans-serif !important;
 }
 /*
 
@@ -11,13 +11,13 @@ Navigation Bar
 
 */
 .nav-bar {
-  border: 1px black solid;
   padding: 10px 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
   box-shadow: 0px 0px 10px 5px rgba(12, 12, 12, 0.1);
+  vertical-align: middle;
 }
 
 .logo {
@@ -213,6 +213,10 @@ li:hover {
   cursor: pointer;
   color: black;
 }
+
+li:active {
+  color: black;
+}
 /*
 
 
@@ -255,11 +259,11 @@ Cards
 .courses-container {
   display: flex;
   gap: 15px;
-  flex-wrap: wrap;
 }
 
 .card {
   width: 15rem;
+  border: none;
 }
 .card-image {
   width: 15rem;
@@ -280,18 +284,20 @@ Cards
 
 .rating {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: wrap;
   width: 70%;
+  vertical-align: middle;
 }
 .rating .total-rate {
   color: #b4690f;
-  font-size: small;
+  font-size: 1rem;
+  font-weight: bold;
   padding: 0;
 }
-.fa-star,
-.fa-star-half-full {
-  font-size: 12px;
+.fa-star::before,
+.fa-star-half-full::before {
+  font-size: 14px;
   color: #e59819;
 }
 .total-rate {
@@ -316,6 +322,7 @@ Cards
 .new-price {
   display: inline;
   font-weight: bold;
+  margin-right: 10px;
 }
 .discount {
   display: inline;
@@ -329,6 +336,14 @@ Cards
   color: #8b8c8e;
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+}
+
 /*
 
   spacing
@@ -336,8 +351,8 @@ Cards
 */
 
 .spacing {
-  width: 100%;
-  height: 100%;
+  width: 200px;
+  height: 200px;
 }
 
 /*
