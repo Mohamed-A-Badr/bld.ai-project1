@@ -188,7 +188,7 @@ header {
 
 list of tabs;
 
-
+*/
 .btns > button {
   background-color: white;
   border: none;
@@ -208,8 +208,8 @@ list of tabs;
   cursor: pointer;
 }
 
-*/
-ul {
+/*
+.tabs {
   list-style: none;
   display: flex;
   align-items: flex-start;
@@ -218,25 +218,17 @@ ul {
   padding: 0;
 }
 
-li {
+.tabs li {
   color: #8b8c8e;
   font-weight: bold;
   font-size: 1rem;
 }
-
-.python {
-  color: black;
-}
-
-li:hover {
+.tabs li:hover,
+.tabs li.active {
   cursor: pointer;
   color: black;
 }
-
-li:active {
-  color: black;
-}
-
+*/
 /*
 
 
@@ -279,6 +271,7 @@ Cards
 .courses-container {
   display: flex;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 .card {
