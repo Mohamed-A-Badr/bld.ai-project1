@@ -19,7 +19,6 @@ export const generateCard = ({
   //insert the image
   const cardImage = document.createElement("img");
   cardImage.src = img;
-
   //insert the image in the image container
   cardImageContainer.appendChild(cardImage);
   //insert image container inside card container

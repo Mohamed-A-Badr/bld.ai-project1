@@ -5,6 +5,8 @@ var indx;
 const btn1 = document.getElementById("btn_python");
 const btn2 = document.getElementById("btn_excel");
 const btn3 = document.getElementById("btn_javascript");
+
+
 btn1.addEventListener("click", python);
 btn2.addEventListener("click", excel);
 btn3.addEventListener("click", javascript);

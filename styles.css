@@ -209,27 +209,6 @@ list of tabs;
 }
 
 /*
-.tabs {
-  list-style: none;
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding: 0;
-}
-
-.tabs li {
-  color: #8b8c8e;
-  font-weight: bold;
-  font-size: 1rem;
-}
-.tabs li:hover,
-.tabs li.active {
-  cursor: pointer;
-  color: black;
-}
-*/
-/*
 
 
 Cards container
@@ -357,6 +336,13 @@ Cards
   border-radius: 50%;
 }
 
+.category_image_container:hover {
+  cursor: pointer;
+}
+.category_image_container img:hover {
+  width: 101%;
+}
+
 /*
 
   Small Screen
@@ -390,6 +376,9 @@ Cards
   .clock-note .note {
     box-shadow: none;
     width: 100%;
+  }
+  button {
+    display: inline-block;
   }
 }
 
