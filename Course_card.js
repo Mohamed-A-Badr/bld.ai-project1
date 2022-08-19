@@ -8,21 +8,18 @@ export const generateCard = ({
   new_Price,
   discount,
 }) => {
+
   //create new div with class name card
   const cardContainer = document.createElement("div");
   cardContainer.classList.add("card");
 
-  //create new div to give space for the image
-  const cardImageContainer = document.createElement("div");
-  cardImageContainer.classList.add("card-image");
-
   //insert the image
   const cardImage = document.createElement("img");
+  cardImage.classList.add("card-img-top");
   cardImage.src = img;
-  //insert the image in the image container
-  cardImageContainer.appendChild(cardImage);
-  //insert image container inside card container
-  cardContainer.appendChild(cardImageContainer);
+
+  //insert image inside card container
+  cardContainer.appendChild(cardImage);
 
   //create a new container for card content
   const cardContentContainer = document.createElement("div");
