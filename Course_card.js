@@ -1,4 +1,3 @@
-const container = document.querySelector(".courses-container");
 export const generateCard = ({
   img,
   title,
@@ -121,7 +120,13 @@ export const generateCard = ({
   cardContainer.appendChild(priceContainer);
 
   //push the card container inside the courses container
-  container.appendChild(cardContainer);
+
+  const container = document.querySelectorAll(".courses-container");
+  const containerArray = Array.from(container);
+  console.log(containerArray);
+  containerArray.forEach((e) => {
+    e.appendChild(cardContainer);
+  });
 };
 
 // Search process
