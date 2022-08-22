@@ -8,6 +8,7 @@ export const generateCard = ({
   discount,
 }) => {
 
+  for(let i = 0; i < 2; i++){
   //create new div with class name card
   const cardContainer = document.createElement("div");
   cardContainer.classList.add("card");
@@ -120,19 +121,19 @@ export const generateCard = ({
   cardContainer.appendChild(priceContainer);
 
   //push the card container inside the courses container
-
-  const container = document.querySelectorAll(".courses-container");
-  const containerArray = Array.from(container);
-  console.log(containerArray);
-  containerArray.forEach((e) => {
-    e.appendChild(cardContainer);
-  });
+  const swip = document.createElement("div");
+  swip.classList.add("swiper-slide");
+  swip.appendChild(cardContainer);
+  
+  const container = document.querySelector(".swiper-wrapper");
+  container.appendChild(swip);
+}
 };
 
 // Search process
 
 const userInput = document.querySelector(".search-input");
-const allCourses = document.querySelector(".courses-container");
+const allCourses = document.querySelector(".swiper-slide");
 
 export const search = () => {
   userInput.addEventListener("keyup", () => {
@@ -150,3 +151,24 @@ export const search = () => {
     });
   });
 };
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});

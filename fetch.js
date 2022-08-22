@@ -39,7 +39,7 @@ const fetchData = async () => {
 };
 
 async function fun() {
-  const udemyCourses = document.querySelectorAll(".courses-container");
+  const udemyCourses = document.querySelector(".swiper-wrapper");
   if (udemyCourses) {
     console.log(indx);
     const udemyCoursesData = await fetchData();
